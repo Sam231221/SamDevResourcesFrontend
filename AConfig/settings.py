@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-rqt3pu7bfx%4m_4ew4k_c8)90)ss(u#2fhixk+2x4q23@&yzp-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['onlinewebresources.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['onlinewebresources.herokuapp.com', '127.0.0.1', '7cf2-2400-1a00-bde0-9b8-b491-1769-6650-fccc.in.ngrok.io',]
 
 
 # Application definition
@@ -106,6 +106,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

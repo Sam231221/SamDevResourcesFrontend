@@ -3,115 +3,51 @@
 Home
 {% endblock %}
 {% block body %}
-<!-- Messenger Chat Plugin Code -->
-<div id="fb-root"></div>
-
-<!-- Your Chat Plugin code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
 
 
 <h1 class="pt-0 title text-center pt-lg-5">
     <box-icon name="code-alt"></box-icon>Web Resources
+    <hr>
 </h1>
 <div class="container mt-3">
 
-    <ul class="nav nav-pills mb-3 justify-content-center align-content-center">
-        <li><a class="nav-link active" target="_blank" data-bs-toggle="pill" href="#webdevelopment">WebDevelopment</a>
-        </li>
-        <li><a class="nav-link" target="_blank" data-bs-toggle="pill" href="#learningresources">Learning Resources</a>
-        </li>
-    </ul>
+    <form class="form-inline my-2 mb-4" action="{% url 'home' %}">
+        <input class="form-control mr-sm-2 mb-2" name="query" type="search" placeholder="Search" aria-label="Search">
+        <input class="btn btn-outline-primary my-2 my-sm-0" type="submit" value="Search" />
+    </form>
+    <div class="row gy-3 gx-2 tab-pane fade active show" id="webdevelopment">
+        {% if resources %}
+        {% for resource in resources %}
+        <div class="col-md-3" id="box">
+            <div class="card p-3">
+                <div class="card-title text-center" style="font-size:24px; font-weight:700;">
+                    {{forloop.counter}}. {{resource.name}}
+                </div>
+                <hr class="m-0">
 
-    <div class="tab-content">
-        <div class="row gy-3 gx-2 tab-pane fade active show" id="webdevelopment">
+                <div class="card-body">
 
-            {% for resource in webresources %}
-            <div class="col-md-3">
-                <div class="card p-3">
-                    <div class="card-title text-center" style="font-size:24px; font-weight:700;">
-                        {{resource.name}}
-                    </div>
-                    <hr class="m-0">
+                    <ol class="list-group list-group-flush list-group-numbered">
+                        {% for i in resource.element_set.all %}
+                        <li class="list-group-item list-style-none"><a href="{{i.url}}" target="_blank">{{i.name}}</a>
 
-                    <div class="card-body">
+                            {% if i.description %}
+                            <p>{{i.description}}</p>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ol>
 
-                        <ol class="list-group list-group-flush list-group-numbered">
-                            {% for i in resource.element_set.all %}
-                            <li class="list-group-item list-style-none"><a href="{{i.url}}"
-                                    target="_blank">{{i.name}}</a>
-
-                                {% if i.description %}
-                                <p>{{i.description}}</p>
-                                {% endif %}
-                            </li>
-                            {% endfor %}
-                        </ol>
-
-                    </div>
                 </div>
             </div>
-            {% endfor %}
-
         </div>
+        {% endfor %}
+        {% else %}
+        <h3 class="text-center"> No Resources found!</h3>
+        {% endif %}
 
-        <div class="row gy-3 gx-2 tab-pane fade" id="learningresources">
-
-            {% for resource in learningresources %}
-            <div class="col-md-3">
-                <div class="card p-3">
-                    <div class="card-title text-center" style="font-size:24px; font-weight:700;">
-                        {{resource.name}}
-                    </div>
-                    <hr class="m-0">
-
-                    <div class="card-body">
-
-                        <ol class="list-group list-group-flush list-group-numbered">
-                            {% for i in resource.element_set.all %}
-                            <li class="list-group-item list-style-none"><a href="{{i.url}}"
-                                    target="_blank">{{i.name}}</a>
-
-                                {% if i.description %}
-                                <p>{{i.description}}</p>
-                                {% endif %}
-                            </li>
-                            {% endfor %}
-                        </ol>
-
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-
-        </div>
     </div>
-
 
 </div>
 
-
-
-<script>
-
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "100247375484205");
-    chatbox.setAttribute("attribution", "biz_inbox");
-
-
-    window.fbAsyncInit = function () {
-        FB.init({
-            xfbml: true,
-            version: 'v13.0'
-        });
-    };
-
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
 {% endblock %}
