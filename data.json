@@ -1,0 +1,684 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-05-16T05:03:21.796Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Resource object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (1)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-05-16T05:07:50.654Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Icons",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (2)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (3)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (4)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (5)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (6)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-05-16T05:28:36.957Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "SEO",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (7)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2022-05-16T05:46:32.624Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Web Development",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2022-05-16T05:46:42.525Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Learning Resource",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2022-05-16T05:46:53.228Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Illustrations",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2022-05-16T05:47:02.765Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "SEO",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2022-05-16T05:47:11.157Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Icons",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2022-05-16T05:52:10.524Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Study",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (8)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (9)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (10)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2022-05-21T12:25:36.278Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "AfterEffects",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (11)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (12)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2022-05-21T12:36:23.479Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Django",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (13)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (14)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (15)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (16)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (17)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (18)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2022-05-21T12:49:33.697Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Django",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"element\", \"object\": \"Element object (19)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (20)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (21)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (22)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (23)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (24)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (25)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (26)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2022-05-21T12:58:48.958Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "StockFootages | DesignTools",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (27)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (28)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (29)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (30)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (31)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (32)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (33)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (34)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (35)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2022-05-21T12:59:04.261Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Tools",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2022-05-22T15:19:04.925Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "React",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (36)\"}}]"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$rAGu7AvVc065CLZVbMXzMy$RZBQH2xpQkkYGae1W9omr7NTEqZDC4ccmkCKuJ9yXpc=",
+        "last_login": "2022-05-22T15:18:38.011Z",
+        "is_superuser": true,
+        "username": "Sam",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-05-16T05:00:26.789Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "18bnr5y0d0zo88y6x3n4wy6g7okdqzzl",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAoLQwu3fcMZGCmUjWQlHZlvLtt0oVu_3vvv0XAbc1ha7yEmcRVaHH53SKmJ5cD0APLvcpUy7rMUR6KPGmTYyV-3U737yBjy3sd3YQDx8El8pzIdR4AwXJvFXhQk2MgH7UlVKpH1ylrkHDXMRky2orPF_2BOEA:1nsnLq:8n7b1MGap-SWNjh76qLWUkTP980O4L5l4i3THXvI0Sc",
+        "expire_date": "2022-06-05T15:18:38.169Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5um92yttyledr5tn1clhb2l1q9i574rl",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAoLQwu3fcMZGCmUjWQlHZlvLtt0oVu_3vvv0XAbc1ha7yEmcRVaHH53SKmJ5cD0APLvcpUy7rMUR6KPGmTYyV-3U737yBjy3sd3YQDx8El8pzIdR4AwXJvFXhQk2MgH7UlVKpH1ylrkHDXMRky2orPF_2BOEA:1nqSqV:SK-JYUdFPw0g2Be04oqNsy296sIjanfQpIm3Tm6EAbM",
+        "expire_date": "2022-05-30T05:00:39.924Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "dlm4rae1mba3zfx44d557rvzjw86ajh3",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAoLQwu3fcMZGCmUjWQlHZlvLtt0oVu_3vvv0XAbc1ha7yEmcRVaHH53SKmJ5cD0APLvcpUy7rMUR6KPGmTYyV-3U737yBjy3sd3YQDx8El8pzIdR4AwXJvFXhQk2MgH7UlVKpH1ylrkHDXMRky2orPF_2BOEA:1nsO8R:VRVZbMCmJKEiDGpFvzeZwMNL2CnBsIMbuwbBIA4hd6w",
+        "expire_date": "2022-06-04T12:23:07.315Z"
+    }
+},
+{
+    "model": "Mapp.category",
+    "pk": 1,
+    "fields": {
+        "name": "Web Development"
+    }
+},
+{
+    "model": "Mapp.category",
+    "pk": 2,
+    "fields": {
+        "name": "Learning Resource"
+    }
+},
+{
+    "model": "Mapp.category",
+    "pk": 3,
+    "fields": {
+        "name": "Tools"
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 1,
+    "fields": {
+        "name": "Illustrations",
+        "category": 1
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 2,
+    "fields": {
+        "name": "Icons",
+        "category": 1
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 3,
+    "fields": {
+        "name": "SEO",
+        "category": 1
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 4,
+    "fields": {
+        "name": "Study",
+        "category": 2
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 5,
+    "fields": {
+        "name": "AfterEffects",
+        "category": 2
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 6,
+    "fields": {
+        "name": "Django",
+        "category": 1
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 7,
+    "fields": {
+        "name": "StockFootages | DesignTools",
+        "category": 2
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 8,
+    "fields": {
+        "name": "React",
+        "category": 1
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 1,
+    "fields": {
+        "name": "undraw",
+        "url": "https://undraw.co/illustrations",
+        "description": "",
+        "resource": 1
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 2,
+    "fields": {
+        "name": "Fontawsesome",
+        "url": "https://fontawesome.com/",
+        "description": "Get access to the largest database of icons and small resources for your projects.",
+        "resource": 2
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 3,
+    "fields": {
+        "name": "flaticon",
+        "url": "https://www.flaticon.com/",
+        "description": "",
+        "resource": 2
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 4,
+    "fields": {
+        "name": "Remixicon",
+        "url": "https://remixicon.com/",
+        "description": "",
+        "resource": 2
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 5,
+    "fields": {
+        "name": "Boxicons",
+        "url": "https://boxicons.com/",
+        "description": "",
+        "resource": 2
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 6,
+    "fields": {
+        "name": "icons8",
+        "url": "https://icons8.com/animated-icons",
+        "description": "Find Animated Icons and Illustrations",
+        "resource": 2
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 7,
+    "fields": {
+        "name": "Semrush",
+        "url": "https://www.semrush.com/blog/category/advanced-seo/page-performance/",
+        "description": "Do SEO, content marketing, competitor research,\r\nPPC and social media marketing from just one platform.",
+        "resource": 3
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 8,
+    "fields": {
+        "name": "FreeComputerBooks",
+        "url": "https://freecomputerbooks.com/Automate-the-Boring-Stuff-with-Python.html",
+        "description": "",
+        "resource": 4
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 9,
+    "fields": {
+        "name": "Python for Everybody",
+        "url": "https://www.py4e.com/book.php",
+        "description": "",
+        "resource": 4
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 10,
+    "fields": {
+        "name": "JavascriptInfo",
+        "url": "https://javascript.info/",
+        "description": "",
+        "resource": 4
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 11,
+    "fields": {
+        "name": "motionarray",
+        "url": "https://motionarray.com/learn/after-effects/",
+        "description": "learn ae. Templates available but premium.",
+        "resource": 5
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 12,
+    "fields": {
+        "name": "introhd",
+        "url": "https://introhd.net/",
+        "description": "great for finding templates",
+        "resource": 5
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 13,
+    "fields": {
+        "name": "Django packages",
+        "url": "https://djangopackages.org/",
+        "description": "Django Packages is a directory of reusable apps, sites, tools, and more for your Django projects.",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 14,
+    "fields": {
+        "name": "dev.to",
+        "url": "https://dev.to/thepylot/create-advanced-user-sign-up-view-in-django-step-by-step-k9m",
+        "description": "",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 15,
+    "fields": {
+        "name": "freecodecamp",
+        "url": "https://www.freecodecamp.org/news/how-to-create-an-analytics-dashboard-in-django-app/",
+        "description": "",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 16,
+    "fields": {
+        "name": "djangotemplatetagsandfilters",
+        "url": "https://www.djangotemplatetagsandfilters.com/filters/category/formatting/",
+        "description": "",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 17,
+    "fields": {
+        "name": "pyplane",
+        "url": "https://blog.pyplane.com/",
+        "description": "",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 18,
+    "fields": {
+        "name": "sqliteonline",
+        "url": "https://sqliteonline.com/",
+        "description": "",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 19,
+    "fields": {
+        "name": "djangosnippets",
+        "url": "https://djangosnippets.org/snippets/233/",
+        "description": "",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 20,
+    "fields": {
+        "name": "webforefront",
+        "url": "https://www.webforefront.com/about/danielrubio/articles.html",
+        "description": "",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 21,
+    "fields": {
+        "name": "awesomedjango",
+        "url": "https://github.com/wsvincent/awesome-django#forms",
+        "description": "all pouplar python django packages",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 22,
+    "fields": {
+        "name": "fullstack python",
+        "url": "https://www.fullstackpython.com/deployment.html",
+        "description": "",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 23,
+    "fields": {
+        "name": "simpleisbetterthancomplex",
+        "url": "https://simpleisbetterthancomplex.com/references/2016/10/10/url-patterns.html",
+        "description": "",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 24,
+    "fields": {
+        "name": "djangocentral",
+        "url": "https://djangocentral.com/articles/",
+        "description": "in depth articles and see what django can do",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 25,
+    "fields": {
+        "name": "codingforenterpreneurs",
+        "url": "https://www.codingforentrepreneurs.com/enroll",
+        "description": "",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 26,
+    "fields": {
+        "name": "learndjango",
+        "url": "https://learndjango.com/tutorials/django-best-practices-models",
+        "description": "",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 27,
+    "fields": {
+        "name": "unsplash",
+        "url": "https://unsplash.com/",
+        "description": "",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 28,
+    "fields": {
+        "name": "resizepixel",
+        "url": "https://www.resizepixel.com/",
+        "description": "Free online image editor\r\nCrop, resize, flip, rotate, convert, compress",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 29,
+    "fields": {
+        "name": "favicon generator",
+        "url": "https://favicon.io/favicon-converter/",
+        "description": "",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 30,
+    "fields": {
+        "name": "figma",
+        "url": "https://www.figma.com/login",
+        "description": "",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 31,
+    "fields": {
+        "name": "canva",
+        "url": "https://www.canva.com/",
+        "description": "",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 32,
+    "fields": {
+        "name": "lovepdf",
+        "url": "https://www.ilovepdf.com/",
+        "description": "",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 33,
+    "fields": {
+        "name": "diagrams.net",
+        "url": "https://app.diagrams.net/",
+        "description": "",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 34,
+    "fields": {
+        "name": "devsnap",
+        "url": "https://devsnap.me/css-button-hover-effects",
+        "description": "find html css snippets",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 35,
+    "fields": {
+        "name": "youtube video downloader",
+        "url": "https://en.savefrom.net/144/",
+        "description": "",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 36,
+    "fields": {
+        "name": "codesandbox",
+        "url": "https://codesandbox.io/",
+        "description": "",
+        "resource": 8
+    }
+}
+]

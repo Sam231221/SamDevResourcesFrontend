@@ -7,8 +7,9 @@ name = "pypi"
 django = "==4.0.3"
 whitenoise = "*"
 gunicorn = "*"
+dj-database-url = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.9"
+python_version = "3.10"
