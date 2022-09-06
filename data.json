@@ -1,242 +1,5 @@
 [
 {
-    "model": "admin.logentry",
-    "pk": 1,
-    "fields": {
-        "action_time": "2022-05-16T05:03:21.796Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "1",
-        "object_repr": "Resource object (1)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (1)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 2,
-    "fields": {
-        "action_time": "2022-05-16T05:07:50.654Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "2",
-        "object_repr": "Icons",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (2)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (3)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (4)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (5)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (6)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 3,
-    "fields": {
-        "action_time": "2022-05-16T05:28:36.957Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "3",
-        "object_repr": "SEO",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (7)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 4,
-    "fields": {
-        "action_time": "2022-05-16T05:46:32.624Z",
-        "user": 1,
-        "content_type": 9,
-        "object_id": "1",
-        "object_repr": "Web Development",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 5,
-    "fields": {
-        "action_time": "2022-05-16T05:46:42.525Z",
-        "user": 1,
-        "content_type": 9,
-        "object_id": "2",
-        "object_repr": "Learning Resource",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 6,
-    "fields": {
-        "action_time": "2022-05-16T05:46:53.228Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "1",
-        "object_repr": "Illustrations",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 7,
-    "fields": {
-        "action_time": "2022-05-16T05:47:02.765Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "3",
-        "object_repr": "SEO",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 8,
-    "fields": {
-        "action_time": "2022-05-16T05:47:11.157Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "2",
-        "object_repr": "Icons",
-        "action_flag": 2,
-        "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 9,
-    "fields": {
-        "action_time": "2022-05-16T05:52:10.524Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "4",
-        "object_repr": "Study",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (8)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (9)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (10)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 10,
-    "fields": {
-        "action_time": "2022-05-21T12:25:36.278Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "5",
-        "object_repr": "AfterEffects",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (11)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (12)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 11,
-    "fields": {
-        "action_time": "2022-05-21T12:36:23.479Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "6",
-        "object_repr": "Django",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (13)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (14)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (15)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (16)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (17)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (18)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 12,
-    "fields": {
-        "action_time": "2022-05-21T12:49:33.697Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "6",
-        "object_repr": "Django",
-        "action_flag": 2,
-        "change_message": "[{\"added\": {\"name\": \"element\", \"object\": \"Element object (19)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (20)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (21)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (22)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (23)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (24)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (25)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (26)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 13,
-    "fields": {
-        "action_time": "2022-05-21T12:58:48.958Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "7",
-        "object_repr": "StockFootages | DesignTools",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (27)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (28)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (29)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (30)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (31)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (32)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (33)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (34)\"}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (35)\"}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 14,
-    "fields": {
-        "action_time": "2022-05-21T12:59:04.261Z",
-        "user": 1,
-        "content_type": 9,
-        "object_id": "3",
-        "object_repr": "Tools",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 15,
-    "fields": {
-        "action_time": "2022-05-22T15:19:04.925Z",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "8",
-        "object_repr": "React",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"element\", \"object\": \"Element object (36)\"}}]"
-    }
-},
-{
-    "model": "auth.user",
-    "pk": 1,
-    "fields": {
-        "password": "pbkdf2_sha256$320000$rAGu7AvVc065CLZVbMXzMy$RZBQH2xpQkkYGae1W9omr7NTEqZDC4ccmkCKuJ9yXpc=",
-        "last_login": "2022-05-22T15:18:38.011Z",
-        "is_superuser": true,
-        "username": "Sam",
-        "first_name": "",
-        "last_name": "",
-        "email": "",
-        "is_staff": true,
-        "is_active": true,
-        "date_joined": "2022-05-16T05:00:26.789Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "18bnr5y0d0zo88y6x3n4wy6g7okdqzzl",
-    "fields": {
-        "session_data": ".eJxVjEEOwiAQRe_C2hAoLQwu3fcMZGCmUjWQlHZlvLtt0oVu_3vvv0XAbc1ha7yEmcRVaHH53SKmJ5cD0APLvcpUy7rMUR6KPGmTYyV-3U737yBjy3sd3YQDx8El8pzIdR4AwXJvFXhQk2MgH7UlVKpH1ylrkHDXMRky2orPF_2BOEA:1nsnLq:8n7b1MGap-SWNjh76qLWUkTP980O4L5l4i3THXvI0Sc",
-        "expire_date": "2022-06-05T15:18:38.169Z"
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "5um92yttyledr5tn1clhb2l1q9i574rl",
-    "fields": {
-        "session_data": ".eJxVjEEOwiAQRe_C2hAoLQwu3fcMZGCmUjWQlHZlvLtt0oVu_3vvv0XAbc1ha7yEmcRVaHH53SKmJ5cD0APLvcpUy7rMUR6KPGmTYyV-3U737yBjy3sd3YQDx8El8pzIdR4AwXJvFXhQk2MgH7UlVKpH1ylrkHDXMRky2orPF_2BOEA:1nqSqV:SK-JYUdFPw0g2Be04oqNsy296sIjanfQpIm3Tm6EAbM",
-        "expire_date": "2022-05-30T05:00:39.924Z"
-    }
-},
-{
-    "model": "sessions.session",
-    "pk": "dlm4rae1mba3zfx44d557rvzjw86ajh3",
-    "fields": {
-        "session_data": ".eJxVjEEOwiAQRe_C2hAoLQwu3fcMZGCmUjWQlHZlvLtt0oVu_3vvv0XAbc1ha7yEmcRVaHH53SKmJ5cD0APLvcpUy7rMUR6KPGmTYyV-3U737yBjy3sd3YQDx8El8pzIdR4AwXJvFXhQk2MgH7UlVKpH1ylrkHDXMRky2orPF_2BOEA:1nsO8R:VRVZbMCmJKEiDGpFvzeZwMNL2CnBsIMbuwbBIA4hd6w",
-        "expire_date": "2022-06-04T12:23:07.315Z"
-    }
-},
-{
     "model": "Mapp.category",
     "pk": 1,
     "fields": {
@@ -255,6 +18,48 @@
     "pk": 3,
     "fields": {
         "name": "Tools"
+    }
+},
+{
+    "model": "Mapp.category",
+    "pk": 4,
+    "fields": {
+        "name": "Linux"
+    }
+},
+{
+    "model": "Mapp.category",
+    "pk": 5,
+    "fields": {
+        "name": "Shell"
+    }
+},
+{
+    "model": "Mapp.category",
+    "pk": 6,
+    "fields": {
+        "name": "Devops"
+    }
+},
+{
+    "model": "Mapp.category",
+    "pk": 7,
+    "fields": {
+        "name": "Technology"
+    }
+},
+{
+    "model": "Mapp.category",
+    "pk": 8,
+    "fields": {
+        "name": "FavTeachersYoutube"
+    }
+},
+{
+    "model": "Mapp.category",
+    "pk": 9,
+    "fields": {
+        "name": "Web Deployment"
     }
 },
 {
@@ -319,6 +124,78 @@
     "fields": {
         "name": "React",
         "category": 1
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 9,
+    "fields": {
+        "name": "Ubuntu",
+        "category": 4
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 10,
+    "fields": {
+        "name": "Docker",
+        "category": 6
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 11,
+    "fields": {
+        "name": "Technical Sites",
+        "category": 7
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 12,
+    "fields": {
+        "name": "DevelopmentBlogSites",
+        "category": 2
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 13,
+    "fields": {
+        "name": "APIS",
+        "category": 7
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 14,
+    "fields": {
+        "name": "JavascriptYoutube",
+        "category": 8
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 15,
+    "fields": {
+        "name": "PythonYoutube",
+        "category": 8
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 16,
+    "fields": {
+        "name": "Deployment",
+        "category": 9
+    }
+},
+{
+    "model": "Mapp.resource",
+    "pk": 17,
+    "fields": {
+        "name": "Frontend Tools",
+        "category": 3
     }
 },
 {
@@ -679,6 +556,476 @@
         "url": "https://codesandbox.io/",
         "description": "",
         "resource": 8
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 37,
+    "fields": {
+        "name": "DigitalOcean",
+        "url": "https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04",
+        "description": "find articles related to linux, devops...",
+        "resource": 9
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 38,
+    "fields": {
+        "name": "computingforgeeks.com",
+        "url": "https://computingforgeeks.com/how-to-install-pgadmin-4-on-ubuntu/#:~:text=How%20To%20Install%20pgAdmin%204%20on%20Ubuntu%2020.04%7C18.04,lists.%20The%20following%20additional%20packages...%20Step%203%",
+        "description": "",
+        "resource": 9
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 39,
+    "fields": {
+        "name": "computerhope.com",
+        "url": "https://www.computerhope.com/issues/ch001879.htm#system-requirements",
+        "description": "",
+        "resource": 9
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 40,
+    "fields": {
+        "name": "docs.docker",
+        "url": "https://docs.docker.com/engine/reference/commandline/top/",
+        "description": "",
+        "resource": 10
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 41,
+    "fields": {
+        "name": "docker hub",
+        "url": "https://hub.docker.com/",
+        "description": "",
+        "resource": 10
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 42,
+    "fields": {
+        "name": "videoconvert",
+        "url": "https://videoconvert.minitool.com/?utm_source=minitool.com&utm_medium=redirection&utm_campaign=mainmenu",
+        "description": "video converter",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 43,
+    "fields": {
+        "name": "pinterest",
+        "url": "https://www.pinterest.com/",
+        "description": "find design ideas",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 44,
+    "fields": {
+        "name": "pixelied.com",
+        "url": "https://pixelied.com/templates/youtube-thumbnails?query=education",
+        "description": "Browse our selection of expertly curated free YouTube thumbnail templates.",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 45,
+    "fields": {
+        "name": "colors.muz",
+        "url": "https://colors.muz.li/",
+        "description": "color palatte generator",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 46,
+    "fields": {
+        "name": "svgcreator",
+        "url": "https://app.svgator.com/editor#/",
+        "description": "create svg",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 47,
+    "fields": {
+        "name": "scalablescripts",
+        "url": "https://scalablescripts.com/",
+        "description": "find premium and rare courses unlike in udemy",
+        "resource": 4
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 48,
+    "fields": {
+        "name": "zebec",
+        "url": "https://zebec.io/",
+        "description": "Zebec is a Web3.0 continuous settlement protocol on. Zebec is enabling composable transfer of\r\nvalue starting with Zebec Payroll.",
+        "resource": 11
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 49,
+    "fields": {
+        "name": "keycdn",
+        "url": "https://tools.keycdn.com/",
+        "description": "Troubleshoot website, network, and CDN issues for fast resolutions.",
+        "resource": 11
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 50,
+    "fields": {
+        "name": "insomnia",
+        "url": "https://insomnia.rest/download",
+        "description": "Start building, designing, testing better APIs through spec-first development driven by an APIOps CI/CD pipelines.",
+        "resource": 11
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 51,
+    "fields": {
+        "name": "anvil.works",
+        "url": "https://anvil.works/",
+        "description": "Build seriously powerful web apps with all the flexibility of Python.\r\nNo web development experience required.",
+        "resource": 11
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 52,
+    "fields": {
+        "name": "elancedigitalmedia",
+        "url": "https://elancedigitalmedia.com/",
+        "description": "NepalÆs First Digital Marketplace for growth seekers like you!",
+        "resource": 11
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 53,
+    "fields": {
+        "name": "msecurity",
+        "url": "https://www.msecurity.app/",
+        "description": "Nepal's Pioneer Antivirus and Security Software",
+        "resource": 11
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 54,
+    "fields": {
+        "name": "Idenati",
+        "url": "https://idenati.com/",
+        "description": "Idenati is designed to simplify your experience, to organize everything you do online in one place, allowing you to focus and be more productive.",
+        "resource": 11
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 55,
+    "fields": {
+        "name": "rapidapi",
+        "url": "https://rapidapi.com/blog/how-to-use-an-api-with-react/#web-apis",
+        "description": "",
+        "resource": 12
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 56,
+    "fields": {
+        "name": "ApiLayer",
+        "url": "https://apilayer.com/marketplace/email_verification-api#documentation-tab",
+        "description": "Boost your appÆs capabilities without worrying about scalability and stability.",
+        "resource": 13
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 57,
+    "fields": {
+        "name": "coingecko",
+        "url": "https://www.coingecko.com/en/api/documentation",
+        "description": "Power your applications with CoinGeckoÆs independently sourced crypto data such as live prices, trading ...",
+        "resource": 13
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 58,
+    "fields": {
+        "name": "developers.google.com",
+        "url": "https://developers.google.com/custom-search/v1/overview",
+        "description": "Develop websites and applications to retrieve and display search results from Programmable Search Engine programmatically...",
+        "resource": 13
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 59,
+    "fields": {
+        "name": "log2base2.co",
+        "url": "https://log2base2.co",
+        "description": "Crack Interview Problems in an Animated Way",
+        "resource": 4
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 60,
+    "fields": {
+        "name": "storybook",
+        "url": "https://storybook.js.org/",
+        "description": "Storybook is an open source tool for building UI components and pages in isolation.",
+        "resource": 8
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 61,
+    "fields": {
+        "name": "prismic",
+        "url": "https://prismic.io/",
+        "description": "We're making a calm, non-intrusive CMS that simply works, and works very well û on its own, and with other tools",
+        "resource": 8
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 62,
+    "fields": {
+        "name": "ui8",
+        "url": "https://ui8.net/",
+        "description": "energize your creative workflow",
+        "resource": 7
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 63,
+    "fields": {
+        "name": "Sanjeev Thiyagarajan",
+        "url": "https://www.youtube.com/c/SanjeevThiyagarajan",
+        "description": "(Frontend Special)React NextJs Devps special",
+        "resource": 14
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 64,
+    "fields": {
+        "name": "Javascript Mastery",
+        "url": "https://www.youtube.com/c/JavaScriptMastery",
+        "description": "Premium level Frontend Projects",
+        "resource": 14
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 65,
+    "fields": {
+        "name": "Lama Dev",
+        "url": "https://www.youtube.com/c/LamaDev",
+        "description": "React Special",
+        "resource": 14
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 66,
+    "fields": {
+        "name": "Pedro Tech",
+        "url": "https://www.youtube.com/c/PedroTechnologies",
+        "description": "",
+        "resource": 14
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 67,
+    "fields": {
+        "name": "Online Tutorials",
+        "url": "https://www.youtube.com/c/OnlineTutorials4Designers",
+        "description": "HtML, CSS special",
+        "resource": 14
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 68,
+    "fields": {
+        "name": "Very Academy",
+        "url": "https://www.youtube.com/c/veryacademy",
+        "description": "Django Special",
+        "resource": 15
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 69,
+    "fields": {
+        "name": "Coding for Enterprenuers",
+        "url": "https://www.youtube.com/c/CodingEntrepreneurs",
+        "description": "Django Special",
+        "resource": 15
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 70,
+    "fields": {
+        "name": "CryceTruly",
+        "url": "https://www.youtube.com/c/CryceTruly",
+        "description": "",
+        "resource": 15
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 71,
+    "fields": {
+        "name": "Django Mastery",
+        "url": "https://www.youtube.com/channel/UCdjZlWAZRImoe_Ah6v4PCdw",
+        "description": "",
+        "resource": 15
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 72,
+    "fields": {
+        "name": "OtchereDev",
+        "url": "https://www.youtube.com/c/OtchereDev",
+        "description": "Udemy Clone NextJs",
+        "resource": 6
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 73,
+    "fields": {
+        "name": "qoddi",
+        "url": "https://qoddi.com/",
+        "description": "Deploy your code now, forget about Networks",
+        "resource": 16
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 74,
+    "fields": {
+        "name": "supabase",
+        "url": "https://supabase.com/",
+        "description": "Supabase is an open source Firebase alternative. Start your project with a Postgres Database, Authentication, instant APIs, Realtime subscriptions and Storage.",
+        "resource": 16
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 75,
+    "fields": {
+        "name": "render",
+        "url": "https://render.com/",
+        "description": "Heroku alternative.",
+        "resource": 16
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 76,
+    "fields": {
+        "name": "animista",
+        "url": "https://animista.net/",
+        "description": "css animation within seconds,",
+        "resource": 17
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 77,
+    "fields": {
+        "name": "angrytools",
+        "url": "https://angrytools.com/",
+        "description": "Gradient Generator, Color picker, Background Remover and so on.",
+        "resource": 17
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 78,
+    "fields": {
+        "name": "lucid",
+        "url": "https://lucid.app/",
+        "description": "database design, relation schema mapping and so on.",
+        "resource": 17
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 79,
+    "fields": {
+        "name": "Pixabay",
+        "url": "https://pixabay.com/images/search/technology/",
+        "description": "Photo stuff",
+        "resource": 17
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 80,
+    "fields": {
+        "name": "OpenAi",
+        "url": "https://openai.com/",
+        "description": "Generates random AI based images on keyword entry",
+        "resource": 17
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 81,
+    "fields": {
+        "name": "Fontawsesome",
+        "url": "https://fontawesome.com/v4/cheatsheet/",
+        "description": "",
+        "resource": 17
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 82,
+    "fields": {
+        "name": "ui8",
+        "url": "https://ui8.net/",
+        "description": "5,678 curated design resources to energize your creative workflow",
+        "resource": 17
+    }
+},
+{
+    "model": "Mapp.element",
+    "pk": 83,
+    "fields": {
+        "name": "RapidApi",
+        "url": "https://rapidapi.com/hub",
+        "description": "Discover and connect to thousands of APIs.",
+        "resource": 13
     }
 }
 ]

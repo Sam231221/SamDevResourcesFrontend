@@ -1,0 +1,1033 @@
+[
+    {
+        "model": "Mapp.category",
+        "pk": 1,
+        "fields": {
+            "name": "Web Development"
+        }
+    },
+    {
+        "model": "Mapp.category",
+        "pk": 2,
+        "fields": {
+            "name": "Learning resourcetype"
+        }
+    },
+    {
+        "model": "Mapp.category",
+        "pk": 3,
+        "fields": {
+            "name": "Tools"
+        }
+    },
+    {
+        "model": "Mapp.category",
+        "pk": 4,
+        "fields": {
+            "name": "Linux"
+        }
+    },
+    {
+        "model": "Mapp.category",
+        "pk": 5,
+        "fields": {
+            "name": "Shell"
+        }
+    },
+    {
+        "model": "Mapp.category",
+        "pk": 6,
+        "fields": {
+            "name": "Devops"
+        }
+    },
+    {
+        "model": "Mapp.category",
+        "pk": 7,
+        "fields": {
+            "name": "Technology"
+        }
+    },
+    {
+        "model": "Mapp.category",
+        "pk": 8,
+        "fields": {
+            "name": "FavTeachersYoutube"
+        }
+    },
+    {
+        "model": "Mapp.category",
+        "pk": 9,
+        "fields": {
+            "name": "Web Deployment"
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 1,
+        "fields": {
+            "name": "Illustrations",
+            "category": 1
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 2,
+        "fields": {
+            "name": "Icons",
+            "category": 1
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 3,
+        "fields": {
+            "name": "SEO",
+            "category": 1
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 4,
+        "fields": {
+            "name": "Study",
+            "category": 2
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 5,
+        "fields": {
+            "name": "AfterEffects",
+            "category": 2
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 6,
+        "fields": {
+            "name": "Django",
+            "category": 1
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 7,
+        "fields": {
+            "name": "StockFootages | DesignTools",
+            "category": 2
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 8,
+        "fields": {
+            "name": "React",
+            "category": 1
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 9,
+        "fields": {
+            "name": "Ubuntu",
+            "category": 4
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 10,
+        "fields": {
+            "name": "Docker",
+            "category": 6
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 11,
+        "fields": {
+            "name": "Technical Sites",
+            "category": 7
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 12,
+        "fields": {
+            "name": "DevelopmentBlogSites",
+            "category": 2
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 13,
+        "fields": {
+            "name": "APIS",
+            "category": 7
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 14,
+        "fields": {
+            "name": "JavascriptYoutube",
+            "category": 8
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 15,
+        "fields": {
+            "name": "PythonYoutube",
+            "category": 8
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 16,
+        "fields": {
+            "name": "Deployment",
+            "category": 9
+        }
+    },
+    {
+        "model": "Mapp.resourcetype",
+        "pk": 17,
+        "fields": {
+            "name": "Frontend Tools",
+            "category": 3
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 1,
+        "fields": {
+            "name": "undraw",
+            "url": "https://undraw.co/illustrations",
+            "description": "",
+            "resource": 1
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 2,
+        "fields": {
+            "name": "Fontawsesome",
+            "url": "https://fontawesome.com/",
+            "description": "Get access to the largest database of icons and small resources for your projects.",
+            "resource": 2
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 3,
+        "fields": {
+            "name": "flaticon",
+            "url": "https://www.flaticon.com/",
+            "description": "",
+            "resource": 2
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 4,
+        "fields": {
+            "name": "Remixicon",
+            "url": "https://remixicon.com/",
+            "description": "",
+            "resource": 2
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 5,
+        "fields": {
+            "name": "Boxicons",
+            "url": "https://boxicons.com/",
+            "description": "",
+            "resource": 2
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 6,
+        "fields": {
+            "name": "icons8",
+            "url": "https://icons8.com/animated-icons",
+            "description": "Find Animated Icons and Illustrations",
+            "resource": 2
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 7,
+        "fields": {
+            "name": "Semrush",
+            "url": "https://www.semrush.com/blog/category/advanced-seo/page-performance/",
+            "description": "Do SEO, content marketing, competitor research,\r\nPPC and social media marketing from just one platform.",
+            "resource": 3
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 8,
+        "fields": {
+            "name": "FreeComputerBooks",
+            "url": "https://freecomputerbooks.com/Automate-the-Boring-Stuff-with-Python.html",
+            "description": "",
+            "resource": 4
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 9,
+        "fields": {
+            "name": "Python for Everybody",
+            "url": "https://www.py4e.com/book.php",
+            "description": "",
+            "resource": 4
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 10,
+        "fields": {
+            "name": "JavascriptInfo",
+            "url": "https://javascript.info/",
+            "description": "",
+            "resource": 4
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 11,
+        "fields": {
+            "name": "motionarray",
+            "url": "https://motionarray.com/learn/after-effects/",
+            "description": "learn ae. Templates available but premium.",
+            "resource": 5
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 12,
+        "fields": {
+            "name": "introhd",
+            "url": "https://introhd.net/",
+            "description": "great for finding templates",
+            "resource": 5
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 13,
+        "fields": {
+            "name": "Django packages",
+            "url": "https://djangopackages.org/",
+            "description": "Django Packages is a directory of reusable apps, sites, tools, and more for your Django projects.",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 14,
+        "fields": {
+            "name": "dev.to",
+            "url": "https://dev.to/thepylot/create-advanced-user-sign-up-view-in-django-step-by-step-k9m",
+            "description": "",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 15,
+        "fields": {
+            "name": "freecodecamp",
+            "url": "https://www.freecodecamp.org/news/how-to-create-an-analytics-dashboard-in-django-app/",
+            "description": "",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 16,
+        "fields": {
+            "name": "djangotemplatetagsandfilters",
+            "url": "https://www.djangotemplatetagsandfilters.com/filters/category/formatting/",
+            "description": "",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 17,
+        "fields": {
+            "name": "pyplane",
+            "url": "https://blog.pyplane.com/",
+            "description": "",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 18,
+        "fields": {
+            "name": "sqliteonline",
+            "url": "https://sqliteonline.com/",
+            "description": "",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 19,
+        "fields": {
+            "name": "djangosnippets",
+            "url": "https://djangosnippets.org/snippets/233/",
+            "description": "",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 20,
+        "fields": {
+            "name": "webforefront",
+            "url": "https://www.webforefront.com/about/danielrubio/articles.html",
+            "description": "",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 21,
+        "fields": {
+            "name": "awesomedjango",
+            "url": "https://github.com/wsvincent/awesome-django#forms",
+            "description": "all pouplar python django packages",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 22,
+        "fields": {
+            "name": "fullstack python",
+            "url": "https://www.fullstackpython.com/deployment.html",
+            "description": "",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 23,
+        "fields": {
+            "name": "simpleisbetterthancomplex",
+            "url": "https://simpleisbetterthancomplex.com/references/2016/10/10/url-patterns.html",
+            "description": "",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 24,
+        "fields": {
+            "name": "djangocentral",
+            "url": "https://djangocentral.com/articles/",
+            "description": "in depth articles and see what django can do",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 25,
+        "fields": {
+            "name": "codingforenterpreneurs",
+            "url": "https://www.codingforentrepreneurs.com/enroll",
+            "description": "",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 26,
+        "fields": {
+            "name": "learndjango",
+            "url": "https://learndjango.com/tutorials/django-best-practices-models",
+            "description": "",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 27,
+        "fields": {
+            "name": "unsplash",
+            "url": "https://unsplash.com/",
+            "description": "",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 28,
+        "fields": {
+            "name": "resizepixel",
+            "url": "https://www.resizepixel.com/",
+            "description": "Free online image editor\r\nCrop, resize, flip, rotate, convert, compress",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 29,
+        "fields": {
+            "name": "favicon generator",
+            "url": "https://favicon.io/favicon-converter/",
+            "description": "",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 30,
+        "fields": {
+            "name": "figma",
+            "url": "https://www.figma.com/login",
+            "description": "",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 31,
+        "fields": {
+            "name": "canva",
+            "url": "https://www.canva.com/",
+            "description": "",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 32,
+        "fields": {
+            "name": "lovepdf",
+            "url": "https://www.ilovepdf.com/",
+            "description": "",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 33,
+        "fields": {
+            "name": "diagrams.net",
+            "url": "https://app.diagrams.net/",
+            "description": "",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 34,
+        "fields": {
+            "name": "devsnap",
+            "url": "https://devsnap.me/css-button-hover-effects",
+            "description": "find html css snippets",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 35,
+        "fields": {
+            "name": "youtube video downloader",
+            "url": "https://en.savefrom.net/144/",
+            "description": "",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 36,
+        "fields": {
+            "name": "codesandbox",
+            "url": "https://codesandbox.io/",
+            "description": "",
+            "resource": 8
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 37,
+        "fields": {
+            "name": "DigitalOcean",
+            "url": "https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04",
+            "description": "find articles related to linux, devops...",
+            "resource": 9
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 38,
+        "fields": {
+            "name": "computingforgeeks.com",
+            "url": "https://computingforgeeks.com/how-to-install-pgadmin-4-on-ubuntu/#:~:text=How%20To%20Install%20pgAdmin%204%20on%20Ubuntu%2020.04%7C18.04,lists.%20The%20following%20additional%20packages...%20Step%203%",
+            "description": "",
+            "resource": 9
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 39,
+        "fields": {
+            "name": "computerhope.com",
+            "url": "https://www.computerhope.com/issues/ch001879.htm#system-requirements",
+            "description": "",
+            "resource": 9
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 40,
+        "fields": {
+            "name": "docs.docker",
+            "url": "https://docs.docker.com/engine/reference/commandline/top/",
+            "description": "",
+            "resource": 10
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 41,
+        "fields": {
+            "name": "docker hub",
+            "url": "https://hub.docker.com/",
+            "description": "",
+            "resource": 10
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 42,
+        "fields": {
+            "name": "videoconvert",
+            "url": "https://videoconvert.minitool.com/?utm_source=minitool.com&utm_medium=redirection&utm_campaign=mainmenu",
+            "description": "video converter",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 43,
+        "fields": {
+            "name": "pinterest",
+            "url": "https://www.pinterest.com/",
+            "description": "find design ideas",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 44,
+        "fields": {
+            "name": "pixelied.com",
+            "url": "https://pixelied.com/templates/youtube-thumbnails?query=education",
+            "description": "Browse our selection of expertly curated free YouTube thumbnail templates.",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 45,
+        "fields": {
+            "name": "colors.muz",
+            "url": "https://colors.muz.li/",
+            "description": "color palatte generator",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 46,
+        "fields": {
+            "name": "svgcreator",
+            "url": "https://app.svgator.com/editor#/",
+            "description": "create svg",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 47,
+        "fields": {
+            "name": "scalablescripts",
+            "url": "https://scalablescripts.com/",
+            "description": "find premium and rare courses unlike in udemy",
+            "resource": 4
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 48,
+        "fields": {
+            "name": "zebec",
+            "url": "https://zebec.io/",
+            "description": "Zebec is a Web3.0 continuous settlement protocol on. Zebec is enabling composable transfer of\r\nvalue starting with Zebec Payroll.",
+            "resource": 11
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 49,
+        "fields": {
+            "name": "keycdn",
+            "url": "https://tools.keycdn.com/",
+            "description": "Troubleshoot website, network, and CDN issues for fast resolutions.",
+            "resource": 11
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 50,
+        "fields": {
+            "name": "insomnia",
+            "url": "https://insomnia.rest/download",
+            "description": "Start building, designing, testing better APIs through spec-first development driven by an APIOps CI/CD pipelines.",
+            "resource": 11
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 51,
+        "fields": {
+            "name": "anvil.works",
+            "url": "https://anvil.works/",
+            "description": "Build seriously powerful web apps with all the flexibility of Python.\r\nNo web development experience required.",
+            "resource": 11
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 52,
+        "fields": {
+            "name": "elancedigitalmedia",
+            "url": "https://elancedigitalmedia.com/",
+            "description": "NepalÆs First Digital Marketplace for growth seekers like you!",
+            "resource": 11
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 53,
+        "fields": {
+            "name": "msecurity",
+            "url": "https://www.msecurity.app/",
+            "description": "Nepal's Pioneer Antivirus and Security Software",
+            "resource": 11
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 54,
+        "fields": {
+            "name": "Idenati",
+            "url": "https://idenati.com/",
+            "description": "Idenati is designed to simplify your experience, to organize everything you do online in one place, allowing you to focus and be more productive.",
+            "resource": 11
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 55,
+        "fields": {
+            "name": "rapidapi",
+            "url": "https://rapidapi.com/blog/how-to-use-an-api-with-react/#web-apis",
+            "description": "",
+            "resource": 12
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 56,
+        "fields": {
+            "name": "ApiLayer",
+            "url": "https://apilayer.com/marketplace/email_verification-api#documentation-tab",
+            "description": "Boost your appÆs capabilities without worrying about scalability and stability.",
+            "resource": 13
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 57,
+        "fields": {
+            "name": "coingecko",
+            "url": "https://www.coingecko.com/en/api/documentation",
+            "description": "Power your applications with CoinGeckoÆs independently sourced crypto data such as live prices, trading ...",
+            "resource": 13
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 58,
+        "fields": {
+            "name": "developers.google.com",
+            "url": "https://developers.google.com/custom-search/v1/overview",
+            "description": "Develop websites and applications to retrieve and display search results from Programmable Search Engine programmatically...",
+            "resource": 13
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 59,
+        "fields": {
+            "name": "log2base2.co",
+            "url": "https://log2base2.co",
+            "description": "Crack Interview Problems in an Animated Way",
+            "resource": 4
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 60,
+        "fields": {
+            "name": "storybook",
+            "url": "https://storybook.js.org/",
+            "description": "Storybook is an open source tool for building UI components and pages in isolation.",
+            "resource": 8
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 61,
+        "fields": {
+            "name": "prismic",
+            "url": "https://prismic.io/",
+            "description": "We're making a calm, non-intrusive CMS that simply works, and works very well û on its own, and with other tools",
+            "resource": 8
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 62,
+        "fields": {
+            "name": "ui8",
+            "url": "https://ui8.net/",
+            "description": "energize your creative workflow",
+            "resource": 7
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 63,
+        "fields": {
+            "name": "Sanjeev Thiyagarajan",
+            "url": "https://www.youtube.com/c/SanjeevThiyagarajan",
+            "description": "(Frontend Special)React NextJs Devps special",
+            "resource": 14
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 64,
+        "fields": {
+            "name": "Javascript Mastery",
+            "url": "https://www.youtube.com/c/JavaScriptMastery",
+            "description": "Premium level Frontend Projects",
+            "resource": 14
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 65,
+        "fields": {
+            "name": "Lama Dev",
+            "url": "https://www.youtube.com/c/LamaDev",
+            "description": "React Special",
+            "resource": 14
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 66,
+        "fields": {
+            "name": "Pedro Tech",
+            "url": "https://www.youtube.com/c/PedroTechnologies",
+            "description": "",
+            "resource": 14
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 67,
+        "fields": {
+            "name": "Online Tutorials",
+            "url": "https://www.youtube.com/c/OnlineTutorials4Designers",
+            "description": "HtML, CSS special",
+            "resource": 14
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 68,
+        "fields": {
+            "name": "Very Academy",
+            "url": "https://www.youtube.com/c/veryacademy",
+            "description": "Django Special",
+            "resource": 15
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 69,
+        "fields": {
+            "name": "Coding for Enterprenuers",
+            "url": "https://www.youtube.com/c/CodingEntrepreneurs",
+            "description": "Django Special",
+            "resource": 15
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 70,
+        "fields": {
+            "name": "CryceTruly",
+            "url": "https://www.youtube.com/c/CryceTruly",
+            "description": "",
+            "resource": 15
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 71,
+        "fields": {
+            "name": "Django Mastery",
+            "url": "https://www.youtube.com/channel/UCdjZlWAZRImoe_Ah6v4PCdw",
+            "description": "",
+            "resource": 15
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 72,
+        "fields": {
+            "name": "OtchereDev",
+            "url": "https://www.youtube.com/c/OtchereDev",
+            "description": "Udemy Clone NextJs",
+            "resource": 6
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 73,
+        "fields": {
+            "name": "qoddi",
+            "url": "https://qoddi.com/",
+            "description": "Deploy your code now, forget about Networks",
+            "resource": 16
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 74,
+        "fields": {
+            "name": "supabase",
+            "url": "https://supabase.com/",
+            "description": "Supabase is an open source Firebase alternative. Start your project with a Postgres Database, Authentication, instant APIs, Realtime subscriptions and Storage.",
+            "resource": 16
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 75,
+        "fields": {
+            "name": "render",
+            "url": "https://render.com/",
+            "description": "Heroku alternative.",
+            "resource": 16
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 76,
+        "fields": {
+            "name": "animista",
+            "url": "https://animista.net/",
+            "description": "css animation within seconds,",
+            "resource": 17
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 77,
+        "fields": {
+            "name": "angrytools",
+            "url": "https://angrytools.com/",
+            "description": "Gradient Generator, Color picker, Background Remover and so on.",
+            "resource": 17
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 78,
+        "fields": {
+            "name": "lucid",
+            "url": "https://lucid.app/",
+            "description": "database design, relation schema mapping and so on.",
+            "resource": 17
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 79,
+        "fields": {
+            "name": "Pixabay",
+            "url": "https://pixabay.com/images/search/technology/",
+            "description": "Photo stuff",
+            "resource": 17
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 80,
+        "fields": {
+            "name": "OpenAi",
+            "url": "https://openai.com/",
+            "description": "Generates random AI based images on keyword entry",
+            "resource": 17
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 81,
+        "fields": {
+            "name": "Fontawsesome",
+            "url": "https://fontawesome.com/v4/cheatsheet/",
+            "description": "",
+            "resource": 17
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 82,
+        "fields": {
+            "name": "ui8",
+            "url": "https://ui8.net/",
+            "description": "5,678 curated design resources to energize your creative workflow",
+            "resource": 17
+        }
+    },
+    {
+        "model": "Mapp.resource",
+        "pk": 83,
+        "fields": {
+            "name": "RapidApi",
+            "url": "https://rapidapi.com/hub",
+            "description": "Discover and connect to thousands of APIs.",
+            "resource": 13
+        }
+    }
+ 
+    ]
+    

@@ -1,12 +1,12 @@
-from .models import Category, Element, Resource
+from .models import Category,  Resource, ResourceType
 from django.contrib import admin
 
 admin.site.register(Category)
-class ElementAlbum(admin.TabularInline):
-   model = Element
+class ResourceAlbum(admin.TabularInline):
+   model = Resource
    extra = 5
   
 class ResourceAdmin(admin.ModelAdmin):
-   inlines = [ElementAlbum]   
+   inlines = [ResourceAlbum]   
    
-admin.site.register(Resource, ResourceAdmin)
+admin.site.register(ResourceType, ResourceAdmin)
