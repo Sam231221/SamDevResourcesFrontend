@@ -9,7 +9,7 @@ export default function Sidebar() {
     <div className='sidebar col-4'>
       <div className='d-flex align-items-center p-2'>
         <img src={me} alt="me" />
-         <h3 className='m-0 mx-2'>Sam Dev</h3>
+         <h3 className='m-0 mx-2'><strong>Sam Dev</strong></h3>
         
       </div>
     

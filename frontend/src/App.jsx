@@ -37,13 +37,13 @@ function App() {
                            
                             <Route exact path="/categories" element={<CategoryListScreen/>}></Route>
                             <Route exact path={'/createcategory'} element={<CategoryCreateScreen/>}></Route>
-                            <Route exact path={'/updatecategory'} element={<CategoryUpdateScreen/>}></Route>
-                            <Route exact path={'/deletecategory'} element={<CategoryDeleteScreen/>}></Route>
+                            <Route exact path={'/updatecategory/:id'} element={<CategoryUpdateScreen/>}></Route>
+                            <Route exact path={'/deletecategory/:id'} element={<CategoryDeleteScreen/>}></Route>
 
                             <Route exact path={'/resources'} element={<ResourceListSreen/>}></Route>
                             <Route exact path={'/createresource'} element={<ResourceCreateScreen/>}></Route>
-                            <Route exact path={'/updateresource'} element={<ResourceUpdateScreen/>}></Route>
-                            <Route exact path={'/deleteresource'} element={<ResourceDeleteScreen/>}></Route>
+                            <Route exact path={'/updateresource/:id'} element={<ResourceUpdateScreen/>}></Route>
+                            <Route exact path={'/deleteresource/:id'} element={<ResourceDeleteScreen/>}></Route>
 
                             <Route exact path={'/resourcetypes'} element={<ResourceTypeListScreen/>}></Route>
                             <Route exact path={'/createresourcetype'} element={<ResourceTypeCreateScreen/>}></Route>

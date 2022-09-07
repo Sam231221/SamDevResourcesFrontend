@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Mapp',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -129,9 +130,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # WHITENOISE CONFIGURATION FOR SERVING STATIC FILES ONLY.
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+CORS_ALLOWED_ORIGINS =[
+    'http://localhost:3000/',
+]
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES["default"].update(db_from_env)
