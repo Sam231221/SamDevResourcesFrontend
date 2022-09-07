@@ -1,0 +1,27 @@
+a{
+  text-decoration: none!important;
+  transition: all .6s ease-in-out;
+}
+
+body{
+  background-color: #f6fdfc!important;
+}
+main{
+  min-height: 80vh;
+}
+
+h3{
+  padding: .3rem;  
+}
+
+.rating span{
+  margin: 0.1rem;
+}
+.card{
+  border: none!important;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 16%);
+
+}
+.bg-white{
+  background-color: white;
+}
