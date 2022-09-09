@@ -51,7 +51,7 @@ export default function ResourceUpdateScreen() {
     'resourcetype':resourcetypename,
   })
   console.log(data)
-  redirect('/resourcetypes')
+  redirect('/resources')
 }
 
 

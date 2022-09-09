@@ -35,7 +35,8 @@ export const ResourceTypeListScreen =()=> {
                 </tr>
             </thead>
 
-            <tbody>
+            <tbody className='bg-white'>
+    
 
             {resourcetypes.map((resourcetype, i)=>(
                           <tr key={i}>

@@ -29,6 +29,7 @@ export const DashboardScreen = () => {
     <div className='container mt-5'>
       <div class="d-flex align-items-center">
             <form class="w-100 me-3" role="search">
+              <h3>Search for Resources</h3>
               <input type="search" onChange={(e)=> setKeyword(e.target.value)} class="form-control" placeholder="Search..." aria-label="Search" />
             </form>
 
@@ -37,7 +38,7 @@ export const DashboardScreen = () => {
 
            {resourcetypes.map((resourcetype, i)=>(
                                 <div key={resourcetype.id} className="col">
-                                <div class="card" style={{"width": "18rem"}}>
+                                <div class="card" style={{"width": "22rem"}}>
                                   <div class="card-header">
                                    <h4>{i+1}. {resourcetype.name}</h4>
                   

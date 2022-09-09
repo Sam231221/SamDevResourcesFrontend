@@ -33,7 +33,8 @@ export default function ResourceSreen() {
                 </tr>
             </thead>
 
-            <tbody>
+            <tbody className='bg-white'>
+    
 
             {resources.map((resource, i)=>(
                           <tr key={i}>
