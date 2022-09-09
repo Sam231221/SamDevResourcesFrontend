@@ -21,20 +21,50 @@ Use | (OR) operator to search for only one field. For example, when searching ti
 '''
 
 
-class HomeView(View):
- def get(self, request):
-    context={}
-    search_resource = request.GET.get('query')
-    if search_resource:
-        resources = Resource.objects.filter(Q(name__icontains=search_resource))
+@api_view(['GET'])
+def homeView(request):
+    keyword =request.GET.get('keyword')
+    print(keyword)
+    if not keyword:
+        resourcetype_list=list(ResourceType.objects.values())
+        print(resourcetype_list)
+        for resource_type in resourcetype_list:
+            rt=ResourceType.objects.get(id=resource_type['id'])
+            print('rt:', rt)
+            resource_type['resources'] = list(rt.resource_set.values())
+        print('\n',resourcetype_list)
+        return Response(resourcetype_list)
     else:
-        resources = Resource.objects.all()
-    
-    context={
-        'resources': resources
-    }
-    return render(request, 'home.html', context)
+        resourcetype_list=list(ResourceType.objects.filter(name__icontains=keyword).values())
+        print(resourcetype_list)
+        for resource_type in resourcetype_list:
+            rt=ResourceType.objects.get(id=resource_type['id'])
+            print('rt:', rt)
+            resource_type['resources'] = list(rt.resource_set.values())
+        print('\n',resourcetype_list)
+        return Response(resourcetype_list)        
 
+'''
+@api_view(['GET'])
+def homeView(request):
+    resource_list=list(Resource.objects.values())
+    r = ResourceType.objects.get(id =1)
+    v= list(r.resource_set.values())
+    print('\n',v)
+    return Response(resource_list)
+
+
+@api_view(['GET'])
+def homeView(request):
+    resourcetype_list=list(Resource.objects.values())
+    print(resourcetype_list)
+    for resource_type in resourcetype_list:
+        rt=ResourceType.objects.filter(pk=resource_type['id']).first()
+        print('rt:', rt)
+        resource_type['resources'] = list(rt.resource_set.values())
+    print('\n',resourcetype_list)
+    return Response(resourcetype_list)
+'''
 
 """--------------------------------
 Category API
@@ -142,7 +172,6 @@ def resourceTypeUpdateApiView(request, pk):
     else:
         return Response({'success': False, 'message':'Could not get the category with that id'})    
 
-
 @api_view(['DELETE'])
 def resourceTypeDeleteApiView(request, pk):
     resourcetype=ResourceType.objects.filter(pk=pk).first()  
@@ -159,6 +188,7 @@ Resource API
 def resourceListApiView(request):
     resources = Resource.objects.all()
     serializer = ResourceSerializer(resources, many=True)
+    print('\n\n\n')
     print(serializer.data)
     return Response(serializer.data)
 
@@ -174,7 +204,7 @@ def resourceCreateApiView(request):
         resourcetype_obj = ResourceType.objects.filter(name=resourcetype).first()
         print(resourcetype_obj)
         Resource.objects.create(
-            name=name,url=url, description=description ,resource=resourcetype_obj
+            name=name, url=url, description=description ,resource=resourcetype_obj
         )
         return Response('Resource '+ name+ ' was created successfully!.')
     else:
@@ -195,13 +225,14 @@ def getResourceByIdApiView(request, pk):
 def resourceUpdateApiView(request, pk):
     resource=Resource.objects.filter(pk=pk).first()
     print('Resource:', resource)
+    resourcetype_obj = ResourceType.objects.filter(name=request.data['resourcetype'] ).first()
     if resource:
         resource.name =request.data['name']
         resource.url = request.data['url']
         resource.description = request.data['description']
-        resource.resource =request.data['resourcetype']
+        resource.resource = resourcetype_obj
         resource.save()
-        serializer = ResourceTypeSerializer(resource, many=False)
+        serializer = ResourceSerializer(resource, many=False)
         return Response({'success':True, 'resource': serializer.data})
     else:
         return Response({'success': False, 'message':'Could not get the category with that id'})    

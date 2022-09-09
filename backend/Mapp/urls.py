@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('',views.HomeView.as_view(), name='home' ),
+    path('dashboard',views.homeView, name='home' ),
     path('categories/', views.categoryListApiView, name="categories" ),
     path('getcategory/<str:pk>/', views.getCategoryByIdApiView, name="getcategorybyid" ),
      path('createcategory/', views.categoryCreateApiView, name="createcategory" ),
@@ -18,7 +18,7 @@ urlpatterns = [
 
 
     path('resources/', views.resourceListApiView, name="resourcetypes"),
-    path('getresourcetype/<str:pk>/',views.getResourceByIdApiView, name="getresource"),
+    path('getresource/<str:pk>/',views.getResourceByIdApiView, name="getresource"),
     path('createresource/', views.resourceCreateApiView, name="createresources"),
     path('updateresource/<str:pk>/', views.resourceUpdateApiView, name="updateresource"),
     path('deleteresource/<str:pk>/', views.resourceDeleteApiView, name="deleteresource"),
