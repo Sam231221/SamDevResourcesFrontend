@@ -12,6 +12,11 @@ class ResourceSerializer(serializers.ModelSerializer):
         fields ="__all__"
 
 class ResourceTypeSerializer(serializers.ModelSerializer):
+    category_name = serializers.SerializerMethodField()
     class Meta:
         model=ResourceType
-        fields ="__all__"        
+        fields ="__all__"      
+
+    #access by category_name in frontend
+    def get_category_name(self, obj):
+        return obj.category.name      

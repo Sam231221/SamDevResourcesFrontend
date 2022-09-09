@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 export default function CategoryCreateScreen() {
   const redirect = useNavigate()
   const [category, setCategory] =useState('')
+  
   const handleOnClick = async () =>{
         const {data} = await axios.post('/api/createcategory/',{'category':category})
         console.log(data)

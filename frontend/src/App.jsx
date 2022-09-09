@@ -47,8 +47,8 @@ function App() {
 
                             <Route exact path={'/resourcetypes'} element={<ResourceTypeListScreen/>}></Route>
                             <Route exact path={'/createresourcetype'} element={<ResourceTypeCreateScreen/>}></Route>
-                            <Route exact path={'/updateresourcetype'} element={<ResourceTypeUpdateScreen/>}></Route>
-                            <Route exact path={'/deleteresourcetype'} element={<ResourceTypeDeleteScreen/>}></Route>
+                            <Route exact path={'/updateresourcetype/:id'} element={<ResourceTypeUpdateScreen/>}></Route>
+                            <Route exact path={'/deleteresourcetype/:id'} element={<ResourceTypeDeleteScreen/>}></Route>
                            
 
                         </Routes>

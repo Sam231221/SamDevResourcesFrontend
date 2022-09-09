@@ -5,6 +5,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 
 export default function CategoryUpdateScreen(){
   const {id} =useParams()
+  const redirect = useNavigate()
   console.log(id)
   const [category, setCategory] = useState('')
  
@@ -24,6 +25,9 @@ export default function CategoryUpdateScreen(){
     e.preventDefault()
     const {data} = await axios.put(`/api/updatecategory/${id}/`, {'category':category})
     console.log(data)
+    if (data.success==true){
+      redirect('/categories')
+    }
  
   }
   return (
