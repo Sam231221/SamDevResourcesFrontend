@@ -6,23 +6,6 @@ import { DashboardScreen } from './screens/DashboardScreen';
 import Footer from './components/Footer/Footer';
 import Sidebar from './components/Sidebar';
 
-
-import ResourceListSreen from './screens/Resource/ResourceListSreen';
-import ResourceCreateScreen from './screens/Resource/ResourceCreateScreen';
-import ResourceUpdateScreen from './screens/Resource/ResourceUpdateScreen';
-import ResourceDeleteScreen from './screens/Resource/ResourceDeleteScreen';
-
-
-import CategoryListScreen from './screens/Category/CategoryListScreen';
-import CategoryCreateScreen from './screens/Category/CategoryCreateScreen';
-import CategoryUpdateScreen from './screens/Category/CategoryUpdateScreen';
-import CategoryDeleteScreen from './screens/Category/CategoryDeleteScreen';
-
-
-import { ResourceTypeListScreen } from './screens/ResourceType/ResourceTypeListScreen';
-import { ResourceTypeUpdateScreen } from './screens/ResourceType/ResourceTypeUpdateScreen';
-import { ResourceTypeDeleteScreen } from './screens/ResourceType/ResourceTypeDeleteScreen';
-import { ResourceTypeCreateScreen } from './screens/ResourceType/ResourceTypeCreateScreen';
 function App() {
   return (
         <Router>
@@ -34,23 +17,6 @@ function App() {
                       
                         <Routes>
                             <Route exact path="/" element={<DashboardScreen />}></Route>
-                           
-                            <Route exact path="/categories" element={<CategoryListScreen/>}></Route>
-                            <Route exact path={'/createcategory'} element={<CategoryCreateScreen/>}></Route>
-                            <Route exact path={'/updatecategory/:id'} element={<CategoryUpdateScreen/>}></Route>
-                            <Route exact path={'/deletecategory/:id'} element={<CategoryDeleteScreen/>}></Route>
-
-                            <Route exact path={'/resources'} element={<ResourceListSreen/>}></Route>
-                            <Route exact path={'/createresource'} element={<ResourceCreateScreen/>}></Route>
-                            <Route exact path={'/updateresource/:id'} element={<ResourceUpdateScreen/>}></Route>
-                            <Route exact path={'/deleteresource/:id'} element={<ResourceDeleteScreen/>}></Route>
-
-                            <Route exact path={'/resourcetypes'} element={<ResourceTypeListScreen/>}></Route>
-                            <Route exact path={'/createresourcetype'} element={<ResourceTypeCreateScreen/>}></Route>
-                            <Route exact path={'/updateresourcetype/:id'} element={<ResourceTypeUpdateScreen/>}></Route>
-                            <Route exact path={'/deleteresourcetype/:id'} element={<ResourceTypeDeleteScreen/>}></Route>
-                           
-
                         </Routes>
 
                       </Container>

@@ -74,27 +74,34 @@ h3{
   transition: all 0.3s ease;
 }
 
-.wrapper ul li {
+.wrapper ul a,
+.wrapper ul .drop-button
+{
   line-height: 55px;
-}
-
-.wrapper ul li a {
   position: relative;
   color: #b0b3b8;
   font-size: 18px;
   font-weight: 500;
   padding: 0 10px;
   display: flex;
+  cursor: pointer;
   border-radius: 8px;
   align-items: center;
   text-decoration: none;
 }
 
-.wrapper ul li:hover a {
+.wrapper ul a:hover
+.wrapper ul .drop-button:hover
+{
   background: #3A3B3C;
+  color: #fff;
 }
 
-ul li a .icon {
+
+
+ul a .icon,
+ul .drop-button .icon
+{
   height: 40px;
   width: 40px;
   margin-right: 13px;
@@ -105,13 +112,15 @@ ul li a .icon {
   border-radius: 50%;
 }
 
-ul li a .icon span {
+ul a .icon span ,
+ul .drop-button .icon span
+{
   line-height: 40px;
   font-size: 20px;
   color: #b0b3b8;
 }
 
-ul li a i {
+ul a i , ul .drop-button i{
   position: absolute;
   right: 10px;
   font-size: 25px;
@@ -138,4 +147,22 @@ display: none;
 
 .wrapper .arrow span {
   margin-right: 15px;
+}
+
+
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+  background-color: #222222;
+}
+
+::-webkit-scrollbar
+{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: #454545;
+  border-radius: 20px;
 }
