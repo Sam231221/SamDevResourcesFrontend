@@ -2,28 +2,24 @@ import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { urlFor, client } from '../../client';
 
 export default function CategoryListScreen(){
   const [categories, setCategories] = useState([])
-
-  const listCategories = async ()=>{
-    const {data} =await axios.get('api/categories')
-    setCategories(data)
-  } 
-
-  const handleOnDelete= async (id) =>{
-    const {data} = await axios.delete(`api/deletecategory/${id}/`)
-    console.log(data)
-    listCategories()
-  }
-
    useEffect(()=>{
-      listCategories()
+    client.fetch(`*[_type == "category"] `)
+      .then((data) => {
+        setCategories(data.slice(0, 3));
+
+      })
+      .catch(console.error);
+
+      console.log(categories)
    }, [])
 
   return (
     <div className='container mt-3'>
-        <table class="table  table-hover" style={{"box-shadow":' 0px 2px 15px rgb(0 0 0 / 6%)'}}>
+        <table className="table  table-hover" style={{"box-shadow":' 0px 2px 15px rgb(0 0 0 / 6%)'}}>
             <thead className='table-dark'>
                 <tr>
                   <th scope="col">Id</th>
@@ -32,15 +28,16 @@ export default function CategoryListScreen(){
                 </tr>
             </thead>
 
-            <tbody className='bg-white'>
+            <tbody className=''>
     
             {categories.map((category, i)=>(
                   <tr key={i}>
-                     <th scope="row">{category.id}</th>
-                      <th scope="row">{category.name}</th>
-                      <td colspan="2">
+                     <th scope="row">{i+1}</th>
+                      <th scope="row">{category.title}</th>
+                      <td colSpan="2">
                         <Link to={`/updatecategory/${category.id}`} className='btn btn-primary btn-sm'>Update</Link>
-                        <button onClick={()=> handleOnDelete(category.id)} className='btn btn-danger btn-sm mx-3'>Delete</button>
+                        <button  className='btn btn-danger btn-sm mx-3'>Delete</button>
+                        {/* <button onClick={()=> handleOnDelete(category.id)} className='btn btn-danger btn-sm mx-3'>Delete</button> */}
                       </td>
                   </tr>
             ))}

@@ -8,10 +8,13 @@ a{
   text-decoration: none!important;
   transition: all .6s ease-in-out;
 }
+html{
+  font-size: 62.5%;
+}
 
 body{
   font-family: 'Open Sans', sans-serif;
-  background-color: #f6fdfc!important;
+  background-color: #18191A!important;
 }
 main{
   min-height: 80vh;
@@ -24,11 +27,115 @@ h3{
 .rating span{
   margin: 0.1rem;
 }
+.box{
+  width: 400px;
+}
 .card{
+  background-color: #18191a!important;
+  width: 400px;
   border: none!important;
   box-shadow: 0px 2px 15px rgb(0 0 0 / 16%);
 
 }
 .bg-white{
   background-color: white;
+}
+.dark-bg{
+  color: white;
+  background-color: #2c2c2c;
+}
+.dark-link {
+  color: #888b8f !important;
+}
+
+.drop-btn {
+  background: #313131;
+  line-height: 55px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #b0b3b8;
+  padding: 0 20px;
+}
+
+.wrapper {
+  display: flex;
+  overflow: hidden;
+  background: #242526;
+  overflow-y: scroll;
+  height: 25rem;
+  max-height: 41rem;
+  transition: all 0.3s ease;
+}
+
+.wrapper ul {
+  width: 100%;
+  list-style: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.wrapper ul li {
+  line-height: 55px;
+}
+
+.wrapper ul li a {
+  position: relative;
+  color: #b0b3b8;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.wrapper ul li:hover a {
+  background: #3A3B3C;
+}
+
+ul li a .icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 13px;
+  background: #ffffff1a;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li a .icon span {
+  line-height: 40px;
+  font-size: 20px;
+  color: #b0b3b8;
+}
+
+ul li a i {
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  pointer-events: none;
+}
+
+.wrapper ul.blog-drop,
+.wrapper ul.help-drop,
+.wrapper ul.learning-drop,
+.wrapper ul.drop-box
+{
+display: none;
+}
+
+
+/* Go back icon on detail box*/
+.wrapper .arrow {
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #b0b3b8;
+  cursor: pointer;
+}
+
+.wrapper .arrow span {
+  margin-right: 15px;
 }

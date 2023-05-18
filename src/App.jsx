@@ -29,7 +29,7 @@ function App() {
             <div className="container-fluid">
                <div className="row">
                   <Sidebar/>
-                    <main className="col-8">
+                    <div className="col-10">
                       <Container>
                       
                         <Routes>
@@ -55,7 +55,7 @@ function App() {
 
                       </Container>
                     
-                    </main>
+                    </div>
                     <Footer />
                </div>
             </div>
