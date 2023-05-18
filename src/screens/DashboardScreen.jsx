@@ -15,6 +15,7 @@ export const DashboardScreen = () => {
          //Forward Detail Page
          for (let i = 0; i < drop_btns.length; i++) {
           for (let j = 0; j < drop_boxes.length; j++) {
+            console.log('sdfsdfsd')
               drop_btns[i].onclick = (() => {
 
                   document.getElementById(drop_btns[i].parentElement.id).style.marginLeft = "-32rem";
@@ -33,7 +34,7 @@ export const DashboardScreen = () => {
       const back_btns = document.querySelectorAll(".back-btn");
         //Backward Main page
         for (let i =0; i<back_btns.length ; i++){
-
+          console.log('sdfsdfsd')
           back_btns[i].onclick=(()=>{
                document.getElementById("menu-" + back_btns[i].id).style.marginLeft = "0px";
               setTimeout(() => {
