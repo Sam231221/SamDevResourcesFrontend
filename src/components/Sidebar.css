@@ -1,35 +1,95 @@
-.sidebar{
-    background-color: #000;
-    height: 100vh;
-    box-shadow: 0px 2px 15px rgb(0 0 0 / 6%);
-    top: 0;
-    position: sticky;
+.sidebar-col {
+  flex-shrink: 0;
+  width: 200px;
 }
-.sidebar img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+@media (min-width: 992px) {
+  .sidebar-col {
+    width: 240px;
+  }
 }
-.sidebar .nav li{
-    height: 40px;
-}
-
-.side-links:hover{
-    background-color: skyblue!important;
-    color: white;
+.sidebar {
+  background-color: #000;
+  height: 100vh;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 6%);
+  top: 0;
+  position: sticky;
+  width: 100%;
 }
 
-.side-links:hover a{
-    color: white!important;
+.sidebar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
-.bg-black{
-    background-color: black;
+.sidebar .nav li {
+  height: 44px;
+  min-height: 44px;
 }
-.active{
-    background-color: skyblue;
-    color: white;
+
+.side-links:hover {
+  background-color: skyblue !important;
+  color: white;
 }
-.link-white{
-    color: white!important;
+
+.side-links:hover a {
+  color: white !important;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.active {
+  background-color: skyblue;
+  color: white;
+}
+
+.link-white {
+  color: white !important;
+}
+
+/* Mobile hamburger toggle */
+.sidebar-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1050;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-toggle:hover {
+  background-color: #222;
+  color: white;
+}
+
+/* Mobile offcanvas */
+.sidebar-offcanvas {
+  background-color: #000 !important;
+  width: 280px !important;
+}
+
+.sidebar-offcanvas .offcanvas-header {
+  border-bottom: 1px solid #333;
+}
+
+.sidebar-offcanvas .offcanvas-body {
+  padding: 0;
+}
+
+.sidebar-offcanvas .sidebar-header {
+  padding: 1rem;
 }

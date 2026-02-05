@@ -7,13 +7,17 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "seed:resources:dev": "npx convex run resources:seedResourcesFromJson",
+    "seed:resources:prod": "npx convex run --prod resources:seedResourcesFromJson"
   },
   "dependencies": {
     "@sanity/client": "6.0.1",
     "@sanity/image-url": "1.0.2",
     "bootstrap": "5.2.0",
     "bootstrap-icons": "1.9.1",
+    "convex": "^1.31.7",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dotenv": "^0.1.3",

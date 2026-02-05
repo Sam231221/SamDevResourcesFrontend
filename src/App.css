@@ -1,8 +1,682 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Layout - Single Column */
+.main-content {
+  min-height: 100vh;
+  background-color: #18191a;
+}
+
+.content-container {
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-container {
+    padding: 2.5rem 2rem;
+  }
+}
+/* Dashboard */
+.dashboard-shell {
+  background: #111113;
+  color: #fff;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.dashboard-shell input::placeholder {
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.dashboard-shell input:focus {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.06);
+}
+
+.dashboard-shell ::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dashboard-shell ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dashboard-shell ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.dashboard-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.dashboard-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-add-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dashboard-add-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.dashboard-add-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Grid */
+.resource-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+/* Section Card */
+.section-card {
+  background: #1c1c1e;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  transition: border-color 0.25s;
+}
+
+.section-card:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.section-header {
+  background: linear-gradient(
+    135deg,
+    rgba(40, 40, 42, 0.95),
+    rgba(30, 30, 32, 0.95)
+  );
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  gap: 8px;
+}
+
+.section-title {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.section-title-input {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 3px 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  flex: 1;
+}
+
+.section-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.section-menu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: #2a2a2c;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  min-width: 150px;
+  overflow: hidden;
+  animation: fadeInDown 0.15s ease;
+}
+
+.section-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: #e0e0e0;
+  font-size: 13px;
+  padding: 9px 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+  text-align: left;
+}
+
+.section-menu-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.section-menu-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 2px 0;
+}
+
+.section-menu-delete {
+  color: #ff6b6b;
+}
+
+.section-menu-delete:hover {
+  background: rgba(255, 59, 48, 0.1);
+}
+
+.section-body {
+  padding: 4px 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 160px;
+}
+
+.section-row {
+  display: flex;
+  align-items: center;
+  padding: 11px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+  transition: background 0.18s ease;
+  cursor: pointer;
+  position: relative;
+  gap: 8px;
+}
+
+.section-row:hover {
+  background: rgba(255, 255, 255, 0.035);
+  border-radius: 8px;
+}
+
+.section-row:last-child {
+  border-bottom: none;
+}
+
+.section-row.is-editing {
+  cursor: text;
+  background: rgba(255, 255, 255, 0.03);
+  align-items: flex-start;
+}
+
+.section-row.empty-row {
+  cursor: default;
+  background: transparent;
+}
+
+.section-row.empty-row .row-label {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.section-row.empty-row:hover {
+  background: transparent;
+  border-radius: 0;
+}
+
+.row-label {
+  flex: 1;
+  color: #e0e0e0;
+  font-size: 13.5px;
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.row-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.section-row:hover .row-actions {
+  opacity: 1;
+}
+
+.row-chevron {
+  opacity: 0.35;
+}
+
+.row-input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13.5px;
+  padding: 5px 10px;
+  outline: none;
+  font-family: inherit;
+}
+
+.row-input-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.row-edit-actions {
+  display: flex;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.row-input-stack .row-edit-actions {
+  margin-left: 0;
+}
+
+.back-row {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.add-row {
+  padding: 10px 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-row.add-row-stack {
+  align-items: flex-start;
+}
+
+.icon-button {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.icon-button:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.icon-button-add:hover {
+  background: rgba(48, 209, 88, 0.12);
+  color: #30d158;
+}
+
+.icon-button-menu:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.icon-button-confirm {
+  background: rgba(48, 209, 88, 0.15);
+  border: 1px solid rgba(48, 209, 88, 0.25);
+  color: #30d158;
+}
+
+.icon-button-confirm:hover {
+  background: rgba(48, 209, 88, 0.25);
+  color: #30d158;
+}
+
+.icon-button-cancel {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-button-cancel:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.icon-button-delete:hover {
+  background: rgba(255, 59, 48, 0.12);
+  color: #ff6b6b;
+}
+
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-modal {
+  background: #1c1c1e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 28px 32px;
+  max-width: 380px;
+  width: 90%;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.confirm-title {
+  color: #e5e5e5;
+  font-size: 15px;
+  margin: 0 0 6px;
+  font-weight: 600;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.confirm-message {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 13.5px;
+  margin: 0 0 22px;
+  line-height: 1.5;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.confirm-button {
+  border-radius: 8px;
+  padding: 7px 18px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.confirm-cancel {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ccc;
+}
+
+.confirm-cancel:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.confirm-delete {
+  background: rgba(255, 59, 48, 0.18);
+  border: 1px solid rgba(255, 59, 48, 0.3);
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+.confirm-delete:hover {
+  background: rgba(255, 59, 48, 0.28);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide Animations */
+.slide-left {
+  animation: slideOutLeft 0.15s ease-out forwards;
+}
+
+.slide-right {
+  animation: slideOutRight 0.15s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.2s ease-out forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.2s ease-out forwards;
+}
+
+@keyframes slideOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Manage screen */
+.manage-section {
+  background-color: #242526;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.manage-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -1.25rem;
+  padding: 0 1.25rem;
+}
+
+.manage-table-wrapper .table {
+  margin-bottom: 0;
+  min-width: 600px;
+}
+
+/* Responsive heading */
+h1, h2, h3 {
+  font-size: clamp(1.25rem, 4vw, 2rem);
+}
+
+.h5 {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+}
+
+/* Responsive buttons */
+.btn {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  padding: 0.5rem 1rem;
+}
+
+.btn-sm {
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  padding: 0.375rem 0.75rem;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .manage-section {
+    padding: 1rem;
+    border-radius: 6px;
+  }
+
+  .manage-table-wrapper {
+    margin: 0 -1rem;
+    padding: 0 1rem;
+  }
+
+  .manage-table-wrapper .table {
+    font-size: 0.875rem;
+  }
+
+  .manage-table-wrapper .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  /* Stack buttons on very small screens */
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start !important;
+  }
+
+  .d-flex.justify-content-between > * {
+    width: 100%;
+  }
+
+  .d-flex.justify-content-between .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .manage-section {
+    padding: 1.5rem;
+  }
+}
+
+/* Modal Responsive Styles */
+@media (max-width: 768px) {
+  .modal-dialog {
+    margin: 0.5rem;
+    max-width: calc(100% - 1rem);
+  }
+
+  .modal-content {
+    border-radius: 8px;
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 1rem;
+  }
+
+  .modal-footer .btn {
+    flex: 1;
+    min-width: auto;
+  }
+
+  .modal-lg {
+    max-width: calc(100% - 1rem);
+  }
+}
+
+/* Form Elements Responsive */
+.form-control,
+.form-select {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.form-label {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 500;
+}
+
+/* Text Utilities */
+.text-center {
   text-align: center;
+}
+
+.text-muted {
+  opacity: 0.7;
+}
+
+/* Loading and Empty States */
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 640px) {
+  .py-5 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .logo {

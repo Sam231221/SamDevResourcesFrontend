@@ -5,7 +5,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<DashboardScreen />}></Route>
+        <Route path="/" element={<DashboardScreen />} />
       </Routes>
     </Router>
   );
