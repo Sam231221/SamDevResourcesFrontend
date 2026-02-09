@@ -2,6 +2,7 @@ import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
 
 const schema = defineSchema({
+  // Categories are standalone (not linked to resourceTypes or resources).
   categories: defineTable({
     title: v.string(),
   }).index("byTitle", ["title"]),

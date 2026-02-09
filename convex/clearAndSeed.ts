@@ -4,11 +4,7 @@ import { mutation } from "./_generated/server";
 export const clearAndSeedDatabase = mutation({
   args: {},
   handler: async (ctx) => {
-    console.log("Starting database clear and seed...");
-
     // Step 1: Delete all data (in correct order due to foreign keys)
-    console.log("Clearing existing data...");
-
     // Delete resources (references resourceTypes)
     const resources = await ctx.db.query("resources").collect();
     for (const item of resources) {
@@ -31,9 +27,6 @@ export const clearAndSeedDatabase = mutation({
       await ctx.db.delete(item._id);
     }
 
-    console.log("All data cleared successfully!");
-    console.log("Starting to seed database...");
-
     // Step 2: Create Categories (3 instances)
     await ctx.db.insert("categories", {
       title: "Frontend Development",
@@ -46,8 +39,6 @@ export const clearAndSeedDatabase = mutation({
     await ctx.db.insert("categories", {
       title: "Database & Storage",
     });
-
-    console.log("✓ Created 3 categories");
 
     // Step 3: Create Sources (3 instances)
     await ctx.db.insert("sources", {
@@ -68,8 +59,6 @@ export const clearAndSeedDatabase = mutation({
       description: "Q&A platform for developers",
     });
 
-    console.log("✓ Created 3 sources");
-
     // Step 4: Create Resource Types (3 instances)
     const reactTypeId = await ctx.db.insert("resourceTypes", {
       name: "React",
@@ -88,8 +77,6 @@ export const clearAndSeedDatabase = mutation({
       thumbnailUrl:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     });
-
-    console.log("✓ Created 3 resource types");
 
     // Step 5: Create Resources (7 instances - 2-3 per type)
 
@@ -130,9 +117,6 @@ export const clearAndSeedDatabase = mutation({
       name: "Database Indexing Strategies",
       resourceTypeId: postgresTypeId,
     });
-
-    console.log("✓ Created 7 resources");
-    console.log("Database seeding completed successfully! ✨");
 
     return {
       success: true,

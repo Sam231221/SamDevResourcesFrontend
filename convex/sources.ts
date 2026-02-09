@@ -1,6 +1,5 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
-import sourceSeedsData from "../sourceseeds.json";
 
 export const listSources = query({
   args: {},
@@ -36,37 +35,15 @@ export const updateSource = mutation({
 export const deleteSource = mutation({
   args: { id: v.id("sources") },
   handler: async (ctx, { id }) => {
+    // Clear this source from any resources that reference it
+    const resources = await ctx.db.query("resources").collect();
+    for (const resource of resources) {
+      if (resource.sourceIds?.includes(id)) {
+        const next = (resource.sourceIds ?? []).filter((sid) => sid !== id);
+        await ctx.db.patch(resource._id, { sourceIds: next });
+      }
+    }
     await ctx.db.delete(id);
     return id;
-  },
-});
-
-export const loadAllSources = mutation({
-  args: {},
-  handler: async (ctx) => {
-    // First, clear all existing sources
-    const existingSources = await ctx.db.query("sources").collect();
-    for (const source of existingSources) {
-      await ctx.db.delete(source._id);
-    }
-
-    let loadedCount = 0;
-
-    // Bulk load all sources from seed file with original Sanity IDs
-    for (const source of sourceSeedsData.result) {
-      await ctx.db.insert("sources", {
-        sanityId: source._id, // Store original Sanity _id
-        name: source.name,
-        url: source.url || undefined,
-        description: undefined,
-      });
-      loadedCount++;
-    }
-
-    return {
-      message: `Cleared existing sources and loaded ${loadedCount} sources with original IDs`,
-      total: sourceSeedsData.result.length,
-      loaded: loadedCount,
-    };
   },
 });

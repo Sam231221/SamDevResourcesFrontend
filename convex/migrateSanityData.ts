@@ -1,9 +1,9 @@
+import type { Id } from "./_generated/dataModel";
 import { mutation } from "./_generated/server";
 
-// Sanity data imported from JSON files
-// This migration script maps Sanity IDs to Convex IDs and creates all records
+// Inline Sanity data; maps Sanity IDs to Convex IDs and creates all records.
 
-// Categories from categoryseed.json
+// Categories
 const sanityCategories = [
   {
     _id: "0aa6002b-7cc0-4860-b7c1-d1ef92c678d0",
@@ -19,7 +19,7 @@ const sanityCategories = [
   },
 ];
 
-// Sources from sourceseeds.json (key sources - you can add more)
+// Sources
 const sanitySources = [
   {
     _id: "01709a93-bd20-4844-83f6-44e3f198a2c9",
@@ -236,7 +236,7 @@ const sanitySources = [
   },
 ];
 
-// ResourceTypes from resourcetypeseed.json with their resource references
+// Resource types with resource references
 const sanityResourceTypes = [
   {
     _id: "0de40f06-9526-43d1-bdd3-1d259fab584d",
@@ -336,7 +336,7 @@ const sanityResourceTypes = [
   },
 ];
 
-// Resources from resourceseed.json WITH their source references
+// Resources with source references
 const sanityResources = [
   {
     _id: "032fefc0-423d-4e4c-9f3f-b963487de9f5",
@@ -608,11 +608,7 @@ function buildResourceToTypeMap(): Map<string, string> {
 export const migrateSanityData = mutation({
   args: {},
   handler: async (ctx) => {
-    console.log("🚀 Starting Sanity → Convex migration...");
-
     // Step 1: Clear existing data
-    console.log("📦 Clearing existing Convex data...");
-
     const existingResources = await ctx.db.query("resources").collect();
     for (const item of existingResources) await ctx.db.delete(item._id);
 
@@ -625,36 +621,27 @@ export const migrateSanityData = mutation({
     const existingCategories = await ctx.db.query("categories").collect();
     for (const item of existingCategories) await ctx.db.delete(item._id);
 
-    console.log("✅ Existing data cleared");
-
     // Step 2: Migrate Categories
-    console.log("📁 Migrating categories...");
-    const categoryIdMap = new Map<string, string>();
-
     for (const cat of sanityCategories) {
-      const convexId = await ctx.db.insert("categories", {
+      await ctx.db.insert("categories", {
         title: cat.title,
       });
-      categoryIdMap.set(cat._id, convexId);
     }
-    console.log(`✅ Migrated ${sanityCategories.length} categories`);
 
     // Step 3: Migrate Sources
-    console.log("🔗 Migrating sources...");
     const sourceIdMap = new Map<string, string>();
 
     for (const source of sanitySources) {
       const convexId = await ctx.db.insert("sources", {
+        sanityId: source._id,
         name: source.name,
         url: source.url,
         description: source.description,
       });
       sourceIdMap.set(source._id, convexId);
     }
-    console.log(`✅ Migrated ${sanitySources.length} sources`);
 
     // Step 4: Migrate Resource Types
-    console.log("📂 Migrating resource types...");
     const resourceTypeIdMap = new Map<string, string>();
 
     for (const rt of sanityResourceTypes) {
@@ -663,10 +650,8 @@ export const migrateSanityData = mutation({
       });
       resourceTypeIdMap.set(rt._id, convexId);
     }
-    console.log(`✅ Migrated ${sanityResourceTypes.length} resource types`);
 
     // Step 5: Migrate Resources (with resourceTypeId AND sourceIds relationships)
-    console.log("📄 Migrating resources with source links...");
     const resourceToTypeMap = buildResourceToTypeMap();
     let resourceCount = 0;
     let skippedCount = 0;
@@ -679,17 +664,18 @@ export const migrateSanityData = mutation({
 
         if (convexTypeId) {
           // Map source references to Convex IDs
-          const convexSourceIds: any[] = [];
+          const convexSourceIds: Id<"sources">[] = [];
           for (const sourceRef of resource.sourceRefs || []) {
             const convexSourceId = sourceIdMap.get(sourceRef);
             if (convexSourceId) {
-              convexSourceIds.push(convexSourceId);
+              convexSourceIds.push(convexSourceId as Id<"sources">);
             }
           }
 
           await ctx.db.insert("resources", {
+            sanityId: resource._id,
             name: resource.name,
-            resourceTypeId: convexTypeId as any,
+            resourceTypeId: convexTypeId as Id<"resourceTypes">,
             sourceIds: convexSourceIds,
           });
           resourceCount++;
@@ -697,16 +683,9 @@ export const migrateSanityData = mutation({
           skippedCount++;
         }
       } else {
-        // Resource not assigned to any type - skip or assign to a default
         skippedCount++;
-        console.log(`⚠️ Skipped resource without type: ${resource.name}`);
       }
     }
-    console.log(
-      `✅ Migrated ${resourceCount} resources (${skippedCount} skipped)`,
-    );
-
-    console.log("🎉 Migration completed successfully!");
 
     return {
       success: true,

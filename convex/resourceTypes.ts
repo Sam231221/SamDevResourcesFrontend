@@ -8,14 +8,6 @@ export const listResourceTypes = query({
   },
 });
 
-export const listResourceTypesWithCategories = query({
-  args: {},
-  handler: async (ctx) => {
-    const resourceTypes = await ctx.db.query("resourceTypes").collect();
-    return resourceTypes;
-  },
-});
-
 export const createResourceType = mutation({
   args: {
     name: v.string(),

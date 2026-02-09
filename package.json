@@ -7,9 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "seed:resources:dev": "npx convex run resources:seedResourcesFromJson",
-    "seed:resources:prod": "npx convex run --prod resources:seedResourcesFromJson"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@sanity/client": "6.0.1",
