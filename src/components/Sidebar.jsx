@@ -16,22 +16,7 @@ const NavContent = () => (
     <ul className="nav flex-column mt-3">
       <li className="d-flex side-links align-items-center">
         <div className="row w-100">
-          <div className="col d-flex align-items-center align-self-start">
-            <i className="bi bi-speedometer2 mx-3"></i>
-            <Link to="/" className="p-0 nav-link dark-link">
-              Dashboard
-            </Link>
-          </div>
-        </div>
-      </li>
-      <li className="d-flex side-links align-items-center">
-        <div className="row w-100">
-          <div className="col d-flex align-items-center align-self-start">
-            <i className="bi bi-gear mx-3"></i>
-            <Link to="/manage" className="p-0 nav-link dark-link">
-              Manage
-            </Link>
-          </div>
+          <div className="col d-flex align-items-center align-self-start"></div>
         </div>
       </li>
     </ul>
